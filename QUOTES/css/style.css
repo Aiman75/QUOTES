@@ -1,0 +1,130 @@
+html {
+    font-size: 1em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.title {
+    color:#FFF;
+    margin-top: 280px;
+    margin-left: 160px;
+    font-size: 3.7em;
+    font-weight: 100;
+}
+
+.smile {
+    font-size: 2.8em;
+    font-weight: lighter;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.slider-header ul {
+    padding-bottom: 50px;
+}
+
+.slider-header li {
+    display:block;
+    float:left; 
+    color: #000;
+    margin-right: 10px;
+    font-size: 2.8em;
+}
+
+.slider-header li:hover {
+    color: #FFF;
+    transition: 0.2s ease-in-out;
+}
+
+.texte {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 250px 0 250px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+h2 span {
+    font-weight: bolder !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    width: 90px;
+    height: 2px;
+    background: #000;
+}
+
+
+.two {
+    background: #ffe9e2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "slider-deux image";
+}
+
+.slider-deux {
+    grid-area: slider-deux;
+    text-align: left;
+    padding: 50px 140px 10px 50px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.author {
+    font-weight: lighter;
+    color: #584b40;
+}
+
+.slider-deux li {
+    display:block;
+    float:left; 
+    list-style: circle;
+    color: #000;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.slider-deux li:hover {
+    list-style-type: disc !important;
+    color: #949088;
+    transition: 0.2s ease-in-out;
+}
+
+.image {
+    grid-area: image;
+}
+
+.couple {
+    width: 100%;
+}
+
+
