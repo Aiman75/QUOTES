@@ -14,18 +14,43 @@ body {
     background-repeat: no-repeat;
 }
 
-.logo-title {
+.nav {
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
+    justify-content: space-between;
+    padding: 20px 130px 20px 100px;
+}
+
+.menu {
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.menu hr {
+    background: #FFF;
+    border-color: #FFF;
+    width: 90%;
+    margin: 3px 0;
+}
+
+.menu p {
+    font-size: .9em;
+    margin: 0px;
+}
+
+.header-title {
+    display: flex;
+    justify-content: end;
 }
 
 .title {
     color:#FFF;
-    margin-top: 280px;
-    margin-left: 160px;
+    margin-top: 190px;
+    margin-right: 60px;
     font-size: 3.7em;
     font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .smile {
@@ -107,14 +132,12 @@ hr {
 .slider-deux li {
     display:block;
     float:left; 
-    list-style: circle;
     color: #000;
     margin-right: 10px;
     font-size: 1em;
 }
 
 .slider-deux li:hover {
-    list-style-type: disc !important;
     color: #949088;
     transition: 0.2s ease-in-out;
 }
@@ -126,5 +149,155 @@ hr {
 .couple {
     width: 100%;
 }
+
+.three {
+    padding: 50px;
+}
+
+.three-hr {
+    width: 50px;
+    margin-bottom: 50px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 70px;
+}
+
+.alive, .love, .enjoy, .health {
+    padding: 30px;
+}
+
+.alive, .love, .enjoy, .health p {
+    font-weight: 100;
+}
+
+.alive {
+    border: solid 1px #949088;
+}
+
+.love {
+    border-top: solid 1px #949088;
+    border-right: solid 1px #949088;
+    border-bottom: solid 1px #949088;
+}
+
+.enjoy {
+    border-left: solid 1px #949088;
+    border-right: solid 1px #949088;
+    border-bottom: solid 1px #949088;
+}
+
+.health {
+    border-right: solid 1px #949088;
+    border-bottom: solid 1px #949088;
+}
+
+i {
+    font-weight: 100;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    border: solid 2px #000;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    padding: 12px 20px;
+}
+
+.button a:hover {
+    background: #000;
+    color: #FFF;
+    transition: 0.2s ease-in-out;
+}
+
+.four {
+    background-image: url("../img/four.png");
+    opacity: 0.73;
+    text-align: center;
+    padding: 100px 200px;
+}
+
+.four h2 {
+    font-size: 4em;
+    color: #FFF;
+}
+
+.four p {
+    color: #FFF;
+}
+
+.four span {
+    text-decoration: underline;
+}
+
+.five {
+    background: #f2f4f5;
+    padding: 50px;
+}
+
+.five-hr {
+    width: 50px;
+    margin-bottom: 50px;
+}
+
+.posters {
+    display: grid;
+    grid-template-columns: 1fr 25% 25%;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-areas: "gentleman muse muse"
+                        "gentleman work silence";
+    margin-bottom: 70px;
+}
+
+.gentleman {
+    grid-area: gentleman;
+}
+
+.gentleman img {
+    width: 100%;
+}
+
+.muse {
+    grid-area: muse;
+    margin-bottom: 130px;
+}
+
+.muse img {
+    width: 100%;
+}
+
+.work {
+    grid-area: work;
+}
+
+.work img {
+    width: 100%;
+}
+
+.silence {
+    grid-area: silence;
+}
+
+.silence img {
+    width: 100%;
+}
+
+/* .work-silence {
+    grid-area: work-silence;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+} */
 
 
