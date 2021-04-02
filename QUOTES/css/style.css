@@ -13,32 +13,104 @@ body {
     background-image: url("../img/header.png");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 52rem;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 130px 20px 100px;
+    max-height: 130px;
 }
 
-.menu {
+.burger-open {
     text-align: center;
     color: #FFF;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-.menu hr {
+.burger-open hr {
     background: #FFF;
     border-color: #FFF;
     width: 90%;
     margin: 3px 0;
 }
 
-.menu p {
+.burger-open p {
     font-size: .9em;
     margin: 0px;
 }
+
+
+.burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.35s ease;
+}
+
+.burger-close {
+    display: none;
+}
+
+.active .burger-open {
+        display: none;
+    }
+
+.active .burger-close {
+        display: block;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+
+.close {
+    font-size: 0.4em;
+    margin: 0;
+}
+
+.menu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    color: #FFF;
+    list-style: none;
+    padding-left: 100px;
+    background: #0d0c0ce8;
+}
+
+.menu-item {
+    margin: 0.5rem 0;
+    padding-top: 10px;
+}
+
+.menu-link {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: inherit;
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    transition: all 0.35s ease;
+}
+
+.menu-link:hover {
+    color: #FFF;
+    text-decoration: underline;
+    }
+    
+
+.active {
+    height: 41rem;
+    display: block;
+}
+
 
 .header-title {
     display: flex;
@@ -271,7 +343,6 @@ i {
 
 .muse {
     grid-area: muse;
-    margin-bottom: 130px;
 }
 
 .muse img {
@@ -279,20 +350,28 @@ i {
 }
 
 .work {
+    background-image: url("../img/work.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
     grid-area: work;
 }
 
-.work img {
+/* .work img {
     width: 100%;
-}
+} */
 
 .silence {
+    background-image: url("../img/silence.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
     grid-area: silence;
 }
 
-.silence img {
+/* .silence img {
     width: 100%;
-}
+} */
 
 .footer-top {
     display: grid;
