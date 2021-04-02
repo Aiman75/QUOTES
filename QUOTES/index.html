@@ -8,17 +8,34 @@
     <title>Quotes</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="nav">
             <div class="logo">
                 <a href="#"><img src="../img/logo.png" alt="Logo de QUOTES"></a>
             </div>
-            <div class="menu">
-                <hr>
-                <p>MENU</p>
-                <hr>
+            <div class="burger" id="burger">
+                <div class="burger-open">
+                    <hr>
+                    <p>MENU</p>
+                    <hr>
+                </div>
+                <div class="burger-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <path fill="#252a32" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+                    </svg>
+                    <p class="close">CLOSE</p>
+                </div>
             </div>
         </div>
+        <ul class="menu" id="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">About us</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Categories</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Galery</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Events</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contact us</a></li>
+        </ul>
         <div class="header-title">
             <h1 class="title"><span class="smile">SMILE</span><br>
             it costs you nothing</h1>
@@ -109,10 +126,10 @@
                         <img src="../img/muse.png" alt="">
                     </div>
                     <div class="work">
-                        <img src="../img/work.png" alt="">
+                        <!-- <img src="../img/work.png" alt=""> -->
                     </div>
                     <div class="silence">
-                        <img src="../img/silence.png" alt="">
+                        <!-- <img src="../img/silence.png" alt=""> -->
                     </div>
                 <!-- </div> -->
             </div>
@@ -120,6 +137,7 @@
                 <a href="#" class="more">BROWSE POSTERS</a>
             </div>
         </section>
+    </main>
         <footer class="footer">
             <div class="footer-top">
                 <div>
@@ -185,7 +203,6 @@
                 </div>
             </div>
         </footer>
-    </main>
     <script src="js/main.js"></script>
 </body>
 </html>
