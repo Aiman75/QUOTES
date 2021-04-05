@@ -9,12 +9,61 @@ body {
     font-family: sans-serif;
 }
 
-.header {
+/******************** DEBUT CAROUSEL 1 *******************************/
+
+.container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    height: 50rem;
+}
+
+.first {
     background-image: url("../img/header.png");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 52rem;
+    background-position: center;
+    min-width: 1270px;
+
 }
+
+.second {
+    background-image: url("../img/four.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1270px;
+
+}
+
+.third {
+    background-image: url("../img/stay-true.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1270px;
+
+}
+
+.fourth {
+    background-image: url("../img/poet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1270px;
+
+}
+
+.fifth {
+    background-image: url("../img/golden.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1270px;
+
+}
+
+/******************** FIN CAROUSEL 1 *******************************/
 
 .nav {
     display: flex;
@@ -56,7 +105,63 @@ body {
 
 .burger-close {
     display: none;
+    color: #FFF;
+    text-align: end;
 }
+
+.cross {
+    font-size: 2.5em;
+}
+
+.activeOne .burger-open {
+        display: none;
+    }
+
+.activeOne .burger-close {
+        display: block;
+        padding-top: 10px;
+        padding-right: 140px;
+    }
+
+.activeTwo .burger-open {
+        display: none;
+    }
+
+.activeTwo .burger-close {
+        display: block;
+        padding-top: 10px;
+        padding-right: 140px;
+    }
+
+.activeThree .burger-open {
+        display: none;
+    }
+
+.activeThree .burger-close {
+        display: block;
+        padding-top: 10px;
+        padding-right: 140px;
+    }
+
+.activeFour .burger-open {
+        display: none;
+    }
+
+.activeFour .burger-close {
+        display: block;
+        padding-top: 10px;
+        padding-right: 140px;
+    }
+
+.activeFive .burger-open {
+        display: none;
+    }
+
+.activeFive .burger-close {
+        display: block;
+        padding-top: 10px;
+        padding-right: 140px;
+    }
 
 .active .burger-open {
         display: none;
@@ -64,8 +169,8 @@ body {
 
 .active .burger-close {
         display: block;
-        padding-top: 30px;
-        padding-right: 10px;
+        padding-top: 10px;
+        padding-right: 140px;
     }
 
 .close {
@@ -106,20 +211,60 @@ body {
     }
     
 
-.active {
+.activeOne {
     height: 41rem;
     display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 1163px;
+}   
+
+.activeTwo {
+    height: 41rem;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 1163px;
+    transform: translateX(-1270px);
+}
+
+.activeThree {
+    height: 41rem;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 1163px;
+    transform: translateX(-2541px);
+}
+
+.activeFour {
+    height: 41rem;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 1163px;
+    transform: translateX(-3810px);
+}
+
+.activeFive {
+    height: 41rem;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    min-width: 1163px;
+    transform: translateX(-5080px);
 }
 
 
 .header-title {
     display: flex;
     justify-content: end;
+    z-index: 0;
 }
 
 .title {
     color:#FFF;
-    margin-top: 190px;
+    margin-top: 150px;
     margin-right: 60px;
     font-size: 3.7em;
     font-weight: 100;
@@ -134,7 +279,8 @@ body {
 .slider-header {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    position: absolute;
+    transform: translate(300%, -150%);
 }
 
 .slider-header ul {
@@ -219,8 +365,10 @@ hr {
     grid-area: image;
 }
 
-.couple {
-    width: 100%;
+.image-couple {
+    background-image: url("../img/couple.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .three {
@@ -309,8 +457,9 @@ i {
     color: #FFF;
 }
 
-.four span {
+.four span a {
     text-decoration: underline;
+    color: #FFF;
 }
 
 .five {
