@@ -13,7 +13,7 @@ body {
 
 .container {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     height: 50rem;
 }
@@ -338,9 +338,45 @@ hr {
 .slider-deux {
     grid-area: slider-deux;
     text-align: left;
-    padding: 50px 140px 10px 50px;
+    padding: 50px 140px 60px 50px;
     font-size: 2em;
     font-weight: bolder;
+}
+
+/********************** DEBUT SLIDER 2 **********************************/
+
+
+.containerDeux {
+	display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 400px;
+}
+.slidesDeux{
+	scroll-snap-align: center;
+	min-width: 100%;
+}
+.slidesDeux-control{
+	margin-top: 1rem;
+	text-align: center;
+}
+.slidesDeux-control a{
+	text-decoration: none;
+	display: inline-block;
+	color: royalblue;
+	width: 2rem;
+	height: 2rem;
+	display: inline-grid;
+	place-items: center;
+	border-radius: 50%;
+	border: medium solid royalblue
+}
+
+
+/********************** FIN SLIDER 2 **********************************/
+
+.slider-list {
+    transform: translateX(-40px);
 }
 
 .author {
@@ -353,11 +389,11 @@ hr {
     float:left; 
     color: #000;
     margin-right: 10px;
-    font-size: 1em;
+    font-size: 0.5em;
 }
 
 .slider-deux li:hover {
-    color: #949088;
+    color: #949088 !important;
     transition: 0.2s ease-in-out;
 }
 
