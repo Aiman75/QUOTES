@@ -637,4 +637,86 @@ input {
     transition: 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 480px) {
+
+    .container {
+        height: auto;
+    }
+
+    .nav {
+        padding: 10px 10px 0px 10px;
+    }
+
+    .first, .second, .third, .fourth, .fifth {
+        min-width: 375.2px;
+    }
+
+    .header-title {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 1.7em;
+        margin: 0;
+    }
+
+    .slider-header {
+        transform: translate(50%, -150%);
+    }
+
+    .activeOne {
+        min-width: 345px;
+        padding-left: 30px;
+    }
+
+    .activeTwo {
+        min-width: 340px;
+        transform: translateX(-440px);
+    }
+
+    .activeThree {
+        min-width: 345px;
+        transform: translateX(-751px);
+        padding-left: 30px;
+    }
+
+    .activeFour {
+        min-width: 346px;
+        transform: translateX(-1126px);
+        padding-left: 30px;
+    }
+
+    .activeFive {
+        min-width: 346px;
+        transform: translateX(-1502px);
+        padding-left: 30px;
+    }
+
+    .first .burger-close {
+        transform: translateX(-30px);
+        padding-right: 0 !important;
+    }
+
+    .second .burger-close {
+        transform: translateX(70px);
+        padding-right: 0 !important;
+    }
+
+    .third .burger-close {
+        transform: translateX(-35px);
+        padding-right: 0 !important;
+    }
+
+    .fourth .burger-close {
+        transform: translateX(-35px);
+        padding-right: 0 !important;
+    }
+
+    .fifth .burger-close {
+        transform: translateX(-35px);
+        padding-right: 0 !important;
+    }
+
+}
 
