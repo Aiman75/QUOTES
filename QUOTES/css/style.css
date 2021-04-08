@@ -15,7 +15,7 @@ body {
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    height: 50rem;
+    height: 40rem;
 }
 
 .first {
@@ -264,7 +264,7 @@ body {
 
 .title {
     color:#FFF;
-    margin-top: 150px;
+    margin-top: 60px;
     margin-right: 60px;
     font-size: 3.7em;
     font-weight: 100;
@@ -284,7 +284,7 @@ body {
 }
 
 .slider-header ul {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .slider-header li {
@@ -717,6 +717,86 @@ input {
         transform: translateX(-35px);
         padding-right: 0 !important;
     }
+
+    .texte {
+        padding: 0 20px 0 20px;
+    }
+
+    .two {
+        grid-template-columns: 1fr;
+        grid-template-areas: "slider-deux";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .slider-deux {
+        padding: 50px 20px 60px 20px;
+        font-size: 1em;
+    }
+
+    .slider-list {
+        font-size: 4em;
+        margin: 0px !important;
+    }
+
+    .image-couple {
+        max-width: 375.2px;
+        background-position: center;
+    }
+
+    .three {
+        padding: 30px;
+    }
+
+    .four {
+        padding: 10px 20px;
+    }
+
+    .four h2 {
+        font-size: 2em;
+    }
+
+    .five {
+        padding: 30px;
+    }
+
+    .posters {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 160px 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: "gentleman" "muse" "work" "silence";
+        margin-bottom: 20px;
+    }
+
+    .button {
+        margin-top: 50px;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 50px;
+    }
+
+    .footer-down {
+        padding: 20px 30px 40px 30px;
+        display: block;
+    }
+
+    .medias a {
+        margin-left: 0px;
+    }
+
+    .medias a:hover {
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+
 
 }
 
