@@ -405,6 +405,7 @@ hr {
     background-image: url("../img/couple.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .three {
@@ -511,8 +512,9 @@ i {
 .posters {
     display: grid;
     grid-template-columns: 1fr 25% 25%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50% 1fr;
     grid-column-gap: 20px;
+    grid-row-gap: 10px;
     grid-template-areas: "gentleman muse muse"
                         "gentleman work silence";
     margin-bottom: 70px;
@@ -542,10 +544,6 @@ i {
     grid-area: work;
 }
 
-/* .work img {
-    width: 100%;
-} */
-
 .silence {
     background-image: url("../img/silence.png");
     background-repeat: no-repeat;
@@ -553,10 +551,6 @@ i {
     background-position-x: center;
     grid-area: silence;
 }
-
-/* .silence img {
-    width: 100%;
-} */
 
 .footer-top {
     display: grid;
